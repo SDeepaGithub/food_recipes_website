@@ -114,6 +114,128 @@
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
+.recipe-search-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recipe-search {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.recipe-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.recipe-search input:focus {
+    outline: none;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px;
+}
+
+.footer button {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    cursor: pointer;
+}
+
+/* new recipe */
+#book-container {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    width: 23%;
+    height: 320px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#book-container button {
+    background-color: #CD5C5C;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#add-btn {
+    background-color: black;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#popupOverlay {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    display: none;
+}
+
+#popupContent input {
+    display: block;
+    padding: 10px;
+    width: 350px;
+    margin: 10px;
+    border: none;
+    background-color: #CD5C5C;
+    color: black;
+}
+
+#popupContent input::placeholder {
+    color: black;
+}
+
+#popupContent input:focus {
+    outline: none;
+}
+
+#popupContent {
+    background-color: #CD5C5C;
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    width: 400px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    display: none;
+}
+
+#popButton {
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
 @media screen and (max-width:600px) {
     .nav-icon {
         display: block;
