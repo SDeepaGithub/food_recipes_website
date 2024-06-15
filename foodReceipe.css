@@ -1,0 +1,129 @@
+* {
+    font-family: 'poppins';
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.navbar-link {
+    display: flex;
+    column-gap: 20px;
+
+
+}
+
+.navbar-link-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-link-item a:hover {
+    text-decoration: underline;
+}
+
+.nav-icon {
+    display: none;
+}
+
+
+/* Media query */
+
+
+
+.side-navbar {
+    background-color: black;
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: -60%;
+    color: white;
+    padding: 20px;
+    transition: 2s;
+    display: none;
+
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-link-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.header-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.receipe {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.receipe-container {
+    margin: 10px;
+}
+
+.receipe img {
+    width: 400px;
+    height: 200px;
+}
+
+.receipe .receipe-container a {
+    padding: 2% 5%;
+    margin-top: 10px;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    bottom: 20%;
+    left: 24%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.receipe .receipe-container a:hover {
+    background-color: black;
+    color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+@media screen and (max-width:600px) {
+    .nav-icon {
+        display: block;
+    }
+
+    .navbar-link-item {
+        display: none;
+    }
+
+    .header-image {
+        display: none;
+    }
+}
