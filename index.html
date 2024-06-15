@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register and Login WebApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Food Receipe Web<i class='fas fa-bread-slice' style='font-size:30px;padding-left: 10px;'></i></h1>
+    </div>
+    <div id="main-container">
+        <div class="container" id="signup" style="display:none;">
+            <h1 class="form-title">Register</h1>
+            <form method="post" action="">
+                <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="rEmail" placeholder="Email" required>
+                    <label for="rEmail">Email</label>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="rPassword" placeholder="Password" required>
+                    <label for="rPassword">Password</label>
+                </div>
+                <button class="btn" id="registerButton">Sign Up</button>
+            </form>
+            <div class="links">
+                <p style="width: 400px;">Already Have Account ?</p>
+                <button style="padding: 0px;" id="signInButton">Sign In</button>
+            </div>
+        </div>
+
+        <div class="container" id="signIn">
+            <h1 class="form-title">Sign In</h1>
+            <form method="post" action="">
+                <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <label for="password">Password</label>
+                </div>
+                <button class="btn" id="submitSignIn">Sign In</button>
+            </form>
+            <div class="links">
+                <p style="width: 400px;">Don't have account yet?</p>
+                <button id="signUpButton" style="padding: 0px;">Register Here</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"></script>
+    <script>
+        const signUpButton = document.getElementById('signUpButton');
+        const signInButton = document.getElementById('signInButton');
+        const signInForm = document.getElementById('signIn');
+        const signUpForm = document.getElementById('signup');
+
+        signUpButton.addEventListener('click', function () {
+            signInForm.style.display = "none";
+            signUpForm.style.display = "block";
+        })
+        signInButton.addEventListener('click', function () {
+            signInForm.style.display = "block";
+            signUpForm.style.display = "none";
+        })
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
