@@ -10,3 +10,8 @@
  ### **You can preview the website by clicking the below link** 
 
  **Website URL:** [Food Recipe Website](https://foodreceipebydpa.web.app)
+
+ **To Preview**:
+ 
+ **Login** : welcome@gmail.com
+ **Password** : welcome
